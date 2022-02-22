@@ -3,6 +3,8 @@ on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    node-version:
+      - 14.x
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -15,3 +17,14 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - name: 'Installing yarn...'
+      - run: yarn install --frozen-lockfile
+
+      - name: 'Extracting translations...'
+      - run: yarn extract
+
+      - name: 'Compiling translations...'
+      - run: yarn compile
+
+      - name: 'Building app...'
+      - run: yarn build
