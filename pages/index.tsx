@@ -26,13 +26,15 @@ const Home: NextPage = () => {
       <p>
         <FormattedMessage defaultMessage="This website is built with Next.js and React Intl." />
       </p>
-
       <p>
         <FormattedMessage
           description="A custom user message message"
           defaultMessage="My name is {firstName} {lastName}"
           values={{ firstName: 'John', lastName: 'Doe' }}
         />
+      </p>
+      <p>
+        <FormattedMessage defaultMessage="I am just writing text for fun." />
       </p>
     </div>
   );

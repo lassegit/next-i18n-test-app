@@ -7,8 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract": "formatjs extract '(components||pages)/**/*.ts*' --ignore='**/*.d.ts' --out-file locales/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
-    "compile": "formatjs compile locales/en.json --ast --out-file locales/compiled/de.json"
+    "extract": "formatjs extract '(components||pages)/**/*.ts*' --extract-source-location true --ignore='**/*.d.ts' --out-file locales/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
+    "compile": "formatjs compile locales/en.json --ast --out-file locales/compiled/de.json",
+    "e": "formatjs extract",
+    "c": "formatjs compile"
   },
   "dependencies": {
     "next": "12.1.0",
