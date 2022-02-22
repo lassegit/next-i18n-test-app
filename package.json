@@ -1,0 +1,28 @@
+{
+  "name": "next-i18n-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "extract": "formatjs extract '(components||pages)/**/*.ts*' --ignore='**/*.d.ts' --out-file locales/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
+    "compile": "formatjs compile locales/en.json --ast --out-file locales/compiled/de.json"
+  },
+  "dependencies": {
+    "next": "12.1.0",
+    "react": "^17.0.2",
+    "react-dom": "17.0.2",
+    "react-intl": "^5.24.6"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^4.8.2",
+    "@types/node": "17.0.18",
+    "@types/react": "17.0.39",
+    "babel-plugin-formatjs": "^10.3.18",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0",
+    "typescript": "4.5.5"
+  }
+}

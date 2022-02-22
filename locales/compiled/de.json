@@ -1,0 +1,44 @@
+{
+  "FRCWV0": [
+    {
+      "type": 0,
+      "value": "My name is "
+    },
+    {
+      "type": 1,
+      "value": "firstName"
+    },
+    {
+      "type": 0,
+      "value": " "
+    },
+    {
+      "type": 1,
+      "value": "lastName"
+    }
+  ],
+  "JmrcUN": [
+    {
+      "type": 0,
+      "value": "Testing translation integration"
+    }
+  ],
+  "YIKUgr": [
+    {
+      "type": 0,
+      "value": "Hello and welcome to my website!"
+    }
+  ],
+  "mz8yv5": [
+    {
+      "type": 0,
+      "value": "This is a website used to test different translation integrations."
+    }
+  ],
+  "xLlKg3": [
+    {
+      "type": 0,
+      "value": "This website is built with Next.js and React Intl."
+    }
+  ]
+}
