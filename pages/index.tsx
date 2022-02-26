@@ -2,6 +2,18 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useIntl, FormattedMessage } from 'react-intl';
 
+// function hasObjectChange(currentObj, newObj) {
+//   if (Object.keys(currentObj).length !== Object.keys(newObj).length) {
+//     return true;
+//   }
+//   for (const key in currentObj) {
+//     if (currentObj[key] !== newObj[key]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
 const Home: NextPage = () => {
   const intl = useIntl();
   const title = intl.formatMessage({
