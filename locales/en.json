@@ -1,21 +1,54 @@
 {
   "FRCWV0": {
+    "col": 8,
     "defaultMessage": "My name is {firstName} {lastName}",
-    "description": "A custom user message message"
+    "description": "A custom user message message",
+    "end": 1353,
+    "file": "pages/index.tsx",
+    "line": 44,
+    "start": 1152
   },
   "JmrcUN": {
+    "col": 35,
     "defaultMessage": "Testing translation integration",
-    "description": "Title of the page"
+    "description": "Title of the page",
+    "end": 615,
+    "file": "pages/index.tsx",
+    "line": 21,
+    "start": 517
   },
   "YIKUgr": {
+    "col": 8,
     "defaultMessage": "Hello and welcome to my website!",
-    "description": "H1 page title"
+    "description": "H1 page title",
+    "end": 815,
+    "file": "pages/index.tsx",
+    "line": 32,
+    "start": 717
   },
   "mz8yv5": {
+    "col": 8,
     "defaultMessage": "This is a website used to test different translation integrations.",
-    "description": "Sub title"
+    "description": "Sub title",
+    "end": 1003,
+    "file": "pages/index.tsx",
+    "line": 35,
+    "start": 847
+  },
+  "vIO3jU": {
+    "col": 8,
+    "defaultMessage": "I am just writing text for fun.",
+    "end": 1452,
+    "file": "pages/index.tsx",
+    "line": 51,
+    "start": 1383
   },
   "xLlKg3": {
-    "defaultMessage": "This website is built with Next.js and React Intl."
+    "col": 8,
+    "defaultMessage": "This website is built with Next.js and React Intl.",
+    "end": 1122,
+    "file": "pages/index.tsx",
+    "line": 41,
+    "start": 1034
   }
 }

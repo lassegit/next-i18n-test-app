@@ -1,0 +1,28 @@
+name: GitHub Actions Demo
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2.1.0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      - name: Setup yarn
+        run: npm install -g yarn
+
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+
+      - name: Installing yarn...
+        run: yarn install --frozen-lockfile
+
+      - name: Extracting translations...
+        run: yarn extract
+
+      - name: Compiling translations...
+        run: yarn compile
+
+      - name: Building app...
+        run: yarn build

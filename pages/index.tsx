@@ -2,6 +2,18 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useIntl, FormattedMessage } from 'react-intl';
 
+// function hasObjectChange(currentObj, newObj) {
+//   if (Object.keys(currentObj).length !== Object.keys(newObj).length) {
+//     return true;
+//   }
+//   for (const key in currentObj) {
+//     if (currentObj[key] !== newObj[key]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
 const Home: NextPage = () => {
   const intl = useIntl();
   const title = intl.formatMessage({
@@ -26,13 +38,15 @@ const Home: NextPage = () => {
       <p>
         <FormattedMessage defaultMessage="This website is built with Next.js and React Intl." />
       </p>
-
       <p>
         <FormattedMessage
           description="A custom user message message"
           defaultMessage="My name is {firstName} {lastName}"
           values={{ firstName: 'John', lastName: 'Doe' }}
         />
+      </p>
+      <p>
+        <FormattedMessage defaultMessage="I am just writing text for fun." />
       </p>
     </div>
   );
