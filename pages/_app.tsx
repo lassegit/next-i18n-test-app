@@ -6,6 +6,8 @@ import { useRouter } from 'next/router';
 import i18nconfig from '../git18n.config.json';
 import { getMessages } from 'git18n';
 
+// DUMMY
+
 const messages: {} = i18nconfig.translations.map((t) => {
   try {
     return { [t]: require(`../node_modules/git18n/locales/${t}.json`) };
