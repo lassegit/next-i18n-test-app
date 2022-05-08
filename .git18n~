@@ -1,6 +1,0 @@
-DEFAULT_LANGUAGE=""
-TRANSLATIONS="" // comma separated string
-
-USE_FULLY_AUTOMAED_TRANSLATION=true // fully translate using Deepl 
-
-// GIT18N_SECRET_API_KEY stored as environmental variable

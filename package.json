@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "extract": "formatjs extract '(components|pages)/**/*.{js,jsx,tsx,ts}' --ignore='(.next|dist)/**/*' --out-file locales/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
+    "extract": "formatjs extract '(components|pages)/**/*.{js,jsx,tsx,ts}' --ignore='(.next|dist)/**/*' --extract-source-location  --out-file locales/en.json --id-interpolation-pattern '[sha512:contenthash:base64:6]'",
     "compile": "formatjs compile locales/en.json --ast --out-file locales/compiled/de.json",
-    "git18n": "git18n --files='(components|pages)/**/*.ts*' --ignore='**/*.d.ts' --default=en --translations=de,fr,es,it,dk_dk",
+    "git18n": "git18n --files '(components|pages)/**/*.ts*' --ignore '**/*.d.ts' --local true",
     "e": "formatjs extract",
     "c": "formatjs compile",
     "g": "git18n"

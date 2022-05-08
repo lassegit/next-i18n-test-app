@@ -1,5 +1,0 @@
-{
-  "defaultLanguage": "en",
-  "translations": ["de", "fr", "dk"],
-  "idInterpolationPattern": "[sha512:contenthash:base64:6]"
-}

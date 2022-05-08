@@ -5,17 +5,19 @@ import { useIntl, FormattedMessage } from 'react-intl';
 const Home: NextPage = () => {
   const intl = useIntl();
   const title = intl.formatMessage({
-    defaultMessage: 'Testing translation integration',
-    description: 'Title of the page',
+    defaultMessage: 'Testing translation integration!!#@!#!#!@',
+    description: 'An even better title Title of the page',
   });
 
   return (
     <div>
+      <FormattedMessage defaultMessage="Replicated message." />
       <Head>
         <title>{title}</title>
       </Head>
       <h1>
         <FormattedMessage defaultMessage="Hello and welcome to my website!" description="H1 page title" />
+        <FormattedMessage defaultMessage="Replicated message." />
       </h1>
       <h2>
         <FormattedMessage
@@ -34,6 +36,7 @@ const Home: NextPage = () => {
           values={{ firstName: 'John', lastName: 'Doe' }}
         />
       </p>
+      <FormattedMessage defaultMessage="Replicated message." />
     </div>
   );
 };
